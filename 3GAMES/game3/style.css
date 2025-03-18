@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #282c34;
+    color: white;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#true-btn {
+    background-color: green;
+    color: white;
+}
+
+#false-btn {
+    background-color: red;
+    color: white;
+}
+
+#start {
+    background-color: white;
+    color: black;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 10;
+}
+
+#popup button {
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+

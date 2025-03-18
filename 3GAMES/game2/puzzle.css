@@ -1,0 +1,66 @@
+/* Общие настройки */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Фон */
+body {
+    background: url('background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Лого */
+#title {
+    max-width: 25%; 
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Контейнер пазла */
+    #board {
+    width: 600px;
+    height: 600px;    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 5px solid blue;
+    margin: 20px auto;
+    position: relative;
+}
+
+/* Куски пазла */
+.puzzle-piece {
+    width: 100%;
+    height: 100%;
+    background-image: url("10.jpg"); /* Убедись, что путь правильный */
+    background-size: calc(100% * 3) calc(100% * 3); /* Подгон под размер */
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    #title {
+        max-width: 50%; /* Лого меньше на мобильных */
+    }
+    
+    #board {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .puzzle-piece {
+        font-size: calc(2vw + 10px);
+    }
+}
+
+
+
